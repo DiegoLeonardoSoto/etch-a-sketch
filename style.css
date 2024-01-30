@@ -1,19 +1,37 @@
 body {
   height: 100dvh;
   display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   align-items: center;
   justify-content: center;
 }
 
+#changeSizeBtn {
+  margin-bottom: 1rem;
+  border: 0px;
+  padding: 0.5rem 1rem;
+  font-size: larger;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+#changeSizeBtn:hover {
+  background-color: #414141;
+  cursor: pointer;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
-  min-width: 500px;
+  width: 550px;
+  height: 500px;
   border: 1px solid black;
 }
 
 .square {
-  border: 1px solid #aaaaaa;
+  border: 0.3px solid #aaaaaa;
+  box-sizing: border-box;
 }
